@@ -204,8 +204,12 @@ Component Classes
 .newsletter__subtitle {
     margin-top: 1rem;
 }
-.newsletter__input {
+.input_container {
     margin-top: 3rem;
+    display: grid;
+    gap: 1rem;
+}
+.newsletter__input {
     display: block;
     width: 100%;
     border: none;
@@ -214,10 +218,9 @@ Component Classes
     padding-inline-start: 1rem;
 }
 .newsletter__btn {
-    margin-top: 1rem;
     display: block;
     border: none;
-    float: right;
+    margin-left: auto;
     --clr_btn: var(--clr_pink);
     background-color: var(--clr_btn);
     color: var(--clr_white);
@@ -273,6 +276,9 @@ Animation and Media Queries
     }
     .huddle_info {
         margin-top: 0;
+    }
+    .input_container {
+        grid-template-columns: 1fr auto;
     }
 }
 /* ==========================================================================
